@@ -7,10 +7,12 @@
 # 2. 使用
 
 ## 2.1 合并VSW文件
-示例详见MultiVDataFileTest.combineTest，这个单元测试会将指定目录中的vsw文件，按指定的VIN Pattern 重复生成若干次。
+示例详见MergeFiles.merge方法，这个单元测试会将指定目录中的vsw文件，按指定的VIN Pattern 重复生成若干次。
+测试的vsw文件见 data目录下的文件。
 
 
 ## 2.2 解析  合并VSW文件
-示例详见MultiVDataFileTest.readMultiTest，这个单元测试用例解析输入的文件，并使用迭代器，依次读取合并文件中的原始VSW内容。
+MVDataReaderFactory.openMultipleVswFormats方法将返回一个迭代器。
+通过遍历迭代器，依次读取合并文件中的原始VSW内容。
 
 
