@@ -1,4 +1,4 @@
-# merge-vsw
+# vdata-tool-merge
 
 ## Introduction
 Application to merge VSW data files for more efficient processing in the cloud environment.  vData is an edge database running on vehicles' domain controllers.  It stores signal data in a high-compression file format with the extension of .vsw.  EXD vData SDK offers vsw decoding capabilities in standard programming languages such as C++, [Java](https://github.com/exceeddata/sdk-vdata-java), [Python](https://github.com/exceeddata/sdk-vdata-python), [Javascript](https://github.com/exceeddata/sdk-vdata-javascript), and etc.
