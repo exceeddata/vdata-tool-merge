@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2024 Smart Software for Car Technologies Inc. and EXCEEDDATA
+ * Copyright (C) 2016-2025 Smart Software for Car Technologies Inc. and EXCEEDDATA
  *     https://www.smartsct.com
  *     https://www.exceeddata.com
  *
@@ -29,7 +29,7 @@
  * or other dealings in this Software without prior written authorization
  * of the copyright holder.
  */
-package com.exceeddata.sdk.merge.data;
+package com.exceeddata.tool.vdata.merge;
 
 import com.exceeddata.sdk.vdata.binary.BinaryLittleEndianUtils;
 import com.exceeddata.sdk.vdata.util.LittleEndianBytesWriter;

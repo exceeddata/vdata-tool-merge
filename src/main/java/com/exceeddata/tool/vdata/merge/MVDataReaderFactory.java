@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2024 Smart Software for Car Technologies Inc. and EXCEEDDATA
+ * Copyright (C) 2016-2025 Smart Software for Car Technologies Inc. and EXCEEDDATA
  *     https://www.smartsct.com
  *     https://www.exceeddata.com
  *
@@ -29,18 +29,17 @@
  * or other dealings in this Software without prior written authorization
  * of the copyright holder.
  */
-package com.exceeddata.sdk.merge.data;
-
-
-import com.exceeddata.sdk.vdata.binary.BinarySeekableReader;
-import com.exceeddata.sdk.vdata.binary.LittleEndianSeekableBytesReader;
-import com.exceeddata.sdk.vdata.data.VDataReader;
+package com.exceeddata.tool.vdata.merge;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import com.exceeddata.sdk.vdata.binary.BinarySeekableReader;
+import com.exceeddata.sdk.vdata.binary.LittleEndianSeekableBytesReader;
+import com.exceeddata.sdk.vdata.data.VDataReader;
 
 public class MVDataReaderFactory  {
     private byte[][] datas = null;
@@ -73,6 +72,7 @@ public class MVDataReaderFactory  {
                 return rit.hasNext();
             }
 
+            @SuppressWarnings("deprecation")
             @Override
             public Map.Entry<String, VDataReader> next() {
                 try {

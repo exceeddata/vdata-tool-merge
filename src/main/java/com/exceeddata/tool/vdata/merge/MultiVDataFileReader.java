@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2024 Smart Software for Car Technologies Inc. and EXCEEDDATA
+ * Copyright (C) 2016-2025 Smart Software for Car Technologies Inc. and EXCEEDDATA
  *     https://www.smartsct.com
  *     https://www.exceeddata.com
  *
@@ -29,12 +29,7 @@
  * or other dealings in this Software without prior written authorization
  * of the copyright holder.
  */
-package com.exceeddata.sdk.merge.data;
-
-
-import com.exceeddata.sdk.vdata.binary.BinaryLittleEndianUtils;
-import com.exceeddata.sdk.vdata.binary.BinarySeekableReader;
-import com.exceeddata.sdk.vdata.binary.LittleEndianSeekableBytesReader;
+package com.exceeddata.tool.vdata.merge;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -43,6 +38,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
+
+import com.exceeddata.sdk.vdata.binary.BinaryLittleEndianUtils;
+import com.exceeddata.sdk.vdata.binary.BinarySeekableReader;
+import com.exceeddata.sdk.vdata.binary.LittleEndianSeekableBytesReader;
 
 public class MultiVDataFileReader {
     Logger LOG= Logger.getLogger("com.exceeddata.sdk.combine.data.MultiVDataFileReader" );

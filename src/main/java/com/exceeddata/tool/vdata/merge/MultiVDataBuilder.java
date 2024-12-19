@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2024 Smart Software for Car Technologies Inc. and EXCEEDDATA
+ * Copyright (C) 2016-2025 Smart Software for Car Technologies Inc. and EXCEEDDATA
  *     https://www.smartsct.com
  *     https://www.exceeddata.com
  *
@@ -29,13 +29,7 @@
  * or other dealings in this Software without prior written authorization
  * of the copyright holder.
  */
-package com.exceeddata.sdk.merge.build;
-
-import com.exceeddata.sdk.vdata.binary.LittleEndianSeekableBytesReader;
-import com.exceeddata.sdk.vdata.data.MultiVswIndexInfo;
-import com.exceeddata.sdk.vdata.data.VDataMeta;
-import com.exceeddata.sdk.vdata.data.VDataReader;
-import com.exceeddata.sdk.vdata.util.LittleEndianBytesWriter;
+package com.exceeddata.tool.vdata.merge;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -43,6 +37,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.util.ArrayList;
+
+import com.exceeddata.sdk.vdata.binary.LittleEndianSeekableBytesReader;
+import com.exceeddata.sdk.vdata.data.MultiVswIndexInfo;
+import com.exceeddata.sdk.vdata.data.VDataMeta;
+import com.exceeddata.sdk.vdata.data.VDataReader;
+import com.exceeddata.sdk.vdata.util.LittleEndianBytesWriter;
 
 public class MultiVDataBuilder {
     int formatVersion = 10;

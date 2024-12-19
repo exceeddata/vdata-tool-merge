@@ -5,11 +5,11 @@
   <!-- Replace the group ID with your group ID -->
   <groupId>com.exceeddata.sdk</groupId>
   <!-- Replace the artifact ID with the name of your project -->
-  <artifactId>merge-vsw</artifactId>
+  <artifactId>vdata-tool-merge</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
   <!-- The name should likely match the artifact ID -->
-  <name>EXD vData File Merge Tools</name>
+  <name>EXD vData File Merge Tool</name>
   <url>http://www.exceeddata.com</url>
  
   <properties>
@@ -19,7 +19,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <vdata.sdk.version>2.9.3</vdata.sdk.version>
+    <vdata.sdk.version>2.9.4</vdata.sdk.version>
   </properties>
 
   <build>
@@ -54,7 +54,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.8.2</version>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
