@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <!-- Replace the group ID with your group ID -->
+  <groupId>com.exceeddata.sdk</groupId>
+  <!-- Replace the artifact ID with the name of your project -->
+  <artifactId>merge-vsw</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+  <!-- The name should likely match the artifact ID -->
+  <name>EXD vData File Merge Tools</name>
+  <url>http://www.exceeddata.com</url>
+ 
+  <properties>
+    <maven.compiler.version>3.8.1</maven.compiler.version>
+    <maven.assembly.version>2.6</maven.assembly.version>
+    <maven.surefire.version>2.19.1</maven.surefire.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <vdata.sdk.version>2.9.3</vdata.sdk.version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven.compiler.version}</version>
+        <configuration>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
+        </configuration>
+      </plugin>      
+    </plugins>
+  </build>
+ 
+  <dependencies>
+    <dependency>
+      <groupId>com.exceeddata.sdk</groupId>
+      <artifactId>vdata-sdk-java</artifactId>
+      <version>${vdata.sdk.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+	    <groupId>io.airlift</groupId>
+	    <artifactId>aircompressor</artifactId>
+	    <version>0.24</version>
+	</dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
