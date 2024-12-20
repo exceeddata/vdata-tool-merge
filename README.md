@@ -8,7 +8,7 @@ The following sections demonstrates how to install and use the VSW .
 ## Table of Contents
 - [System Requirement](#system-requirement)
 - [License](#license)
-- [VSW File Examples](#vsw-file-examples)
+- [Demo Main Program](#demo-main-program)
 - [Getting Help](#getting-help)
 - [Contributing to EXD](#contributing-to-exd)
 
@@ -19,15 +19,13 @@ The following sections demonstrates how to install and use the VSW .
 ## License
 The codes in the repository are released with [MIT License](LICENSE).
 
+## Demo Main Program
 
-
-## Step By Step Guide
-[Step By Step Guide CN](guide_cn.md)
-
-## VSW File Examples
-### Different Frequency Data
-- [data_diff_freqency.vsw](https://github.com/exceeddata/sdk-vdata-python/blob/main/sample_files/vsw/data_diff_freqency.vsw): sample data file with 10Hz, 20Hz, 100Hz datas. The Sample file can be found in the Python SDK code repo if the link failed.
-
+- mvn package to compile and package a jar class
+- Prepare a folder of VSW files with the naming conversion vin_xxxxxx.vsw (or use the ones in data/ folder)
+- Run the MergeFiles main(), provide the following required parameters
+  - -i input_paths (may be comma-separated file paths or folder paths)
+  - -o output_path (a output merged file path)
 
 ## Getting Help
 For usage questions, the best place to go to is [Github issues](https://github.com/exceeddata/merge-vsw/issues). For customers of EXCEEDDATA commercial solutions, you can contact [support](mailto:support@smartsct.com) for questions or support.
