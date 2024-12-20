@@ -7,6 +7,7 @@ The following sections demonstrates how to install and use the VSW .
 
 ## Table of Contents
 - [System Requirement](#system-requirement)
+- [Software Dependendies](#software-dependencies)
 - [License](#license)
 - [Demo Main Program](#demo-main-program)
 - [Getting Help](#getting-help)
@@ -16,13 +17,18 @@ The following sections demonstrates how to install and use the VSW .
 - JDK 8
 - vData Java SDK 2.9.0 or above
 
+## Software Dependencies
+- [EXD Commons Public Library](https://github.com/exceeddata/commons-public/) 4.9.0+
+- [EXD Formats Public Library](https://github.com/exceeddata/formats-public/) 4.9.0+
+- EXD vData SDK for Java 2.9.0+
+
 ## License
 The codes in the repository are released with [MIT License](LICENSE).
 
 ## Demo Main Program
 
 - mvn package to compile and package a jar class
-- Prepare a folder of VSW files with the naming conversion vin_xxxxxx.vsw (or use the ones in the [data](https://github.com/exceeddata/vdata-tool-merge/tree/main/data) folder)
+- Prepare a folder of VSW files with the naming conversion vin_xxxxxx.vsw (or use the ones in the [data](data/) folder)
 - Run the MergeFiles main(), provide the following required parameters
   - -i input_paths (may be comma-separated file paths or folder paths)
   - -o output_path (a output merged file path)
