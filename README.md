@@ -15,11 +15,8 @@ The following sections demonstrates how to install and use the VSW .
 
 ## System Requirement
 - JDK 8
-- vData Java SDK 2.9.0 or above
 
 ## Software Dependencies
-- [EXD Commons Public Library](https://github.com/exceeddata/commons-public/) 4.9.0+
-- [EXD Formats Public Library](https://github.com/exceeddata/formats-public/) 4.9.0+
 - EXD vData SDK for Java 2.9.0+
 
 ## License
